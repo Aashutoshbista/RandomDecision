@@ -5,7 +5,7 @@ export default function ComingSoon() {
   return (
     <>
       <Head>
-        <title>Page Under Maintenance | RandomWheel</title>
+        <title>Page Under Maintenance | RandomDecision</title>
         <meta name="description" content="This page is currently under maintenance. Please check back soon." />
         <meta name="robots" content="noindex, follow" />
       </Head>

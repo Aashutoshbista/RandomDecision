@@ -109,7 +109,7 @@ export default function DataInput({
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
-            className="flex-grow p-2 border-2 border-gray-300 rounded-lg focus:outline-none cursor-pointer"
+            className="flex-grow p-1 sm:p-2 border-2 border-gray-300 rounded-lg focus:outline-none cursor-pointer"
             placeholder="Enter options"
             aria-label="Entry input field"
           />
@@ -118,7 +118,7 @@ export default function DataInput({
             className="bg-blue-500 p-2 rounded-sm hover:bg-blue-600 transition-colors duration-300"
             aria-label="Add entry"
           >
-            <MdAdd className="text-white text-2xl" />
+            <MdAdd className="text-white text-xl sm:text-2xl" />
           </button>
         </form>
 

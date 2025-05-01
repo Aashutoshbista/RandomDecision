@@ -11,14 +11,16 @@ export default function Home() {
   };
 
   return (
+    <>
+
     <main className="lg:flex md:p-4 p-2 bg-[#F4F4F5] flex-col md:flex-row gap-4">
       {/* Left Section (Optional Sidebar) */}
-      <aside className="hidden xl:block bg-blue-400 w-full md:w-full xl:w-1/4 p-4">
+      <aside className="hidden xl:block bg-blue-400 w-full md:w-full xl:w-1/4 p-4 h-[85vh] rounded-lg">
         <span className="text-white text-center font-bold text-lg ">
-          Welcome to RandomWheel !
+          Welcome to RandomDecision !
         </span>
         <p className="text-white pt-2  mx-auto max-w-3xl text-md leading-relaxed text-start ">
-          Spin the RandomWheel to make fun, fair decisions! Customize your
+          Spin the RandomDecision to make fun, fair decisions! Customize your
           options and let the wheel choose for you — perfect for games, tasks,
           and giveaways.
         </p>
@@ -34,5 +36,6 @@ export default function Home() {
         <DataInput onDataUpdate={handleDataUpdate} />
       </section>
     </main>
+    </>
   );
 }

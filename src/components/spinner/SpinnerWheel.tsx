@@ -87,7 +87,7 @@ export default function SpinnerWheel({ data }: { data: string[] }) {
       ctx.rotate(toRad((startDeg + endDeg) / 2));
       ctx.textAlign = "center";
       ctx.fillStyle = "#000";
-      ctx.font = "bold 24px serif";
+      ctx.font = "bold 20px serif";
       ctx.fillText(data[i], radius * 0.7, 10); // Adjusted text position slightly
       ctx.restore();
 
@@ -179,7 +179,7 @@ export default function SpinnerWheel({ data }: { data: string[] }) {
             ref={canvasRef}
             role="spinbutton"
             aria-label="Spin the wheel"
-            className="w-70 h-70 sm:w-90 sm:h-90 md:w-130 md:h-130 border-2 rounded-full flex justify-center items-center relative cursor-pointer"
+            className="w-70 h-70 sm:w-90 sm:h-90 md:w-130 md:h-130 border-2  rounded-full flex justify-center items-center relative cursor-pointer"
           />
           <div
             onClick={spin}
