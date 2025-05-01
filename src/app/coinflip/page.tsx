@@ -82,16 +82,16 @@ export default function CoinFlip() {
             Welcome to RandomDecision!
           </h2>
           <p className="text-white mt-4 text-base leading-relaxed text-left">
-            The ultimate online coin flipping tool! Whether you're settling a
+            The ultimate online coin flipping tool! Whether you are settling a
             friendly debate, making a quick decision, or just having fun, our
-            virtual coin toss gives you an instant, unbiased result —{" "}
+            virtual coin toss gives you an instant, unbiased result
             <strong>Heads</strong> or <strong>Tails</strong> with a smooth
             flipping animation.
             <br />
             <br />
             Just click the coin and watch it spin! Behind the scenes, a random
             algorithm ensures fairness, giving you a true 50/50 chance every
-            time. No coins in your pocket? No problem. Flip anytime, anywhere —
+            time. No coins in your pocket? No problem. Flip anytime, anywhere
             right from your browser.
           </p>
         </aside>
