@@ -1,13 +1,9 @@
 "use client";
-
-import Result from "@/components/result/Result";
 import { useState } from "react";
 
 export default function CoinFlip() {
-  const [spinning, setSpinning] = useState<Boolean>(false);
-  const [result, setResult] = useState<string | undefined>();
+  const [spinning, setSpinning] = useState<boolean>(false);
   const [rotation, setRotation] = useState(0);
-  const [currentSide, setCurrentSide] = useState<"Heads" | "Tails">("Heads");
 
   function handleFlip() {
     setSpinning(true);
@@ -24,11 +20,9 @@ export default function CoinFlip() {
 
       // Smooth transition to the final state
       const outcome = Math.random() > 0.5 ? "Heads" : "Tails";
-      setResult(outcome);
-      setCurrentSide(outcome);
 
       // Transition to final rotation smoothly
-      setRotation((prevRotation) => {
+      setRotation(() => {
         const finalRotation = outcome === "Heads" ? 0 : 180;
         return finalRotation;
       });
@@ -91,7 +85,7 @@ export default function CoinFlip() {
             The ultimate online coin flipping tool! Whether you're settling a
             friendly debate, making a quick decision, or just having fun, our
             virtual coin toss gives you an instant, unbiased result —{" "}
-            <strong>Heads</strong> or <strong>Tails</strong> — with a smooth
+            <strong>Heads</strong> or <strong>Tails</strong> with a smooth
             flipping animation.
             <br />
             <br />
