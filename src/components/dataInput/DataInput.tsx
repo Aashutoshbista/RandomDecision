@@ -100,7 +100,7 @@ export default function DataInput({
           className="bg-[#F4F4F5] flex items-center space-x-2 w-full"
           aria-label="Add Entry"
         >
-          <label htmlFor="entry-input" className="sr-only">
+          <label htmlFor="entry-input text-black" className="sr-only">
             Add Entry
           </label>
           <input

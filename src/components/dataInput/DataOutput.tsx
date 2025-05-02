@@ -36,7 +36,7 @@ export default function DataOutput({
               </label>
               <input
                 id={`item-input-${index}`}
-                className="outline-none w-full cursor-pointer"
+                className="outline-none w-full cursor-pointer text-black"
                 value={item}
                 onChange={(e) => onItemChange(index, e.target.value)}
                 aria-label={`Edit item ${index + 1}`}
