@@ -27,7 +27,7 @@ export default function Header() {
           <Link href="/" className="text-xl font-semibold p-3 rounded-xl hover:bg-[rgba(255,255,255,0.25)] transition-colors duration-300 hidden" title="Spin the Wheel">
             Spin Wheel
           </Link>
-          <Link href="/coinflip" className="text-xl font-semibold p-2 sm:p-3 rounded-xl bg-[rgba(255,255,255,0.25)] transition-colors duration-300" title="Flip a Coin">
+          <Link href="/coinflip" className="text-xl font-semibold p-2 sm:p-3 rounded-xl bg-[rgba(255,255,255,0.25)] transition-colors duration-300" title="Flip a Coin" >
             Coin Flip
           </Link>
           <Link href="/cardspin" className="text-xl font-semibold p-3 rounded-xl hover:bg-[rgba(255,255,255,0.25)] transition-colors duration-300 hidden" title="Card Spinner">

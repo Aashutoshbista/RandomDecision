@@ -1,7 +1,7 @@
 // src/app/layout.tsx
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import Script from 'next/script';
+import { GoogleTagManager  } from '@next/third-parties/google'
 import "./globals.css";
 import Header from "@/components/header/Header";
 import { metadataArea } from "./metadata"; // ✅ Correct import based on named export
@@ -21,27 +21,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-      <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-TQBH062QR3"
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
-        >
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-TQBH062QR3');
-          `}
-        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
         {children}
+        <GoogleTagManager gtmId="GTM-TQBH062QR3" />
       </body>
     </html>
   );
