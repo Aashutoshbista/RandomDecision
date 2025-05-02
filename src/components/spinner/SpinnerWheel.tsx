@@ -165,7 +165,7 @@ export default function SpinnerWheel({ data }: { data: string[] }) {
 
   useEffect(() => {
     draw();
-  }, [data]);
+  }, [draw,data]);
 
   return (
     <>
