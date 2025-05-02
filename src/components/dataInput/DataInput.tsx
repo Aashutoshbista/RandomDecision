@@ -54,7 +54,7 @@ export default function DataInput({
   return (
     <main className="border-1 rounded-md border-gray-200 shadow-lg w-full" aria-labelledby="entries-title">
       <header className="p-3">
-        <h1 id="entries-title" className="text-xl font-medium">
+        <h1 id="entries-title" className="text-xl font-medium text-black">
           Entries
         </h1>
       </header>
