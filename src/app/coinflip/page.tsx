@@ -34,7 +34,7 @@ export default function CoinFlip() {
 
   return (
     <>
-      <div className=" ">
+      <div className=" bg-[#F4F4F5]">
         <div className="flex justify-center items-center h-[60vh] ">
           <div
             className="w-60 h-60 sm:w-80 sm:h-80 border-2 border-white flex items-center justify-center rounded-full bg-[#4d96ff] backface-hidden absolute z-2 cursor-pointer"

@@ -33,7 +33,7 @@ export default function WinnerModal({ result }: ResultProp) {
     <div className="fixed inset-0 flex items-center justify-center z-50 p-4 md:p-0">
       <div
         ref={modalRef}
-        className="h-[20vh] w-full md:w-[600px] border border-gray-300 bg-white shadow-lg rounded-md  md:p-6"
+        className="h-[20vh] w-full md:w-[600px] border border-gray-300 bg-white shadow-lg rounded-md  "
       >
         <div className="flex justify-between items-center bg-[#4d96ff] rounded-t text-white px-2 h-[40px]">
           <h3 className="font-semibold text-lg">Winner!</h3>
